@@ -31,6 +31,7 @@ li {
     display: none;
 }
 
+
 @media only screen and (max-width: 600px) {
     .nav_bar {
         display: none;
@@ -175,6 +176,7 @@ li {
     }
 
 }
+
 .nav {
     justify-content: space-between;
     display: flex;
@@ -196,14 +198,49 @@ li {
     cursor: pointer;
     text-decoration: none;
 }
-
-.slider__pic {
-    width: 100%;
+.backs {
+    position: relative;
+    display: block;
+    
 }
+
+.back {
+    
+    background: url(../White/img/portfolio/bg.jpg) no-repeat 100%;
+    background-size: cover;
+    height: 300px;
+    
+}
+.back_h1 {
+    background-color: black;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.back_p {
+   
+      text-align: left;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 2px;
+      margin-top: 10px;
+  }
 
 .consistent {
     margin: 20px;
     align-items: center;
+    margin-top: 50px;
     
 }
 .consistent .row {
@@ -318,89 +355,3 @@ li {
     text-align: center;
     margin: 20px;
 }
-
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    
-  }
-  
-  .mySlides {
-    display: none;
-  }
-  
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-    .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  
-  .fade {
-    -webkit-animation-name: fade;
-    animation-name: fade;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
